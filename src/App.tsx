@@ -8,6 +8,7 @@ import Signup from "./pages/Signup";
 import ProductDetails from "./features/products/components/ProductDetails";
 import CreateProduct from "./pages/CreateProduct";
 import Cart from "./pages/Cart";
+import NotFound from "./pages/NotFound";
 function App() {
   return (
     <>
@@ -48,6 +49,7 @@ function App() {
                 </ProtectedRoute>
               }
             />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>
