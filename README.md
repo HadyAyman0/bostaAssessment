@@ -1,73 +1,38 @@
-# React + TypeScript + Vite
+# 📦 Bosta Shipping Tracking - Technical Assessment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, responsive shipment tracking dashboard built with **React**, **TypeScript**, and **Vite**. This application integrates with Bosta's tracking API to provide real-time updates on shipment statuses with a focus on clean code and modern state management.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+**Check the live application here:** [View Demo](https://bosta-assessment-n77z5ti5e-hady-aymans-projects.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Key Features
+- **Real-time Tracking:** Dynamic shipment tracking using tracking numbers.
+- **Robust Data Fetching:** Optimized API calls, caching, and loading states using **TanStack Query (v5)**.
+- **Global State Management:** Lightweight and efficient state handling with **Zustand**.
+- **Advanced Form Handling:** Professional form management and schema-based validation using **Formik** and **Yup**.
+- **Responsive UI:** Modern, mobile-first design crafted with **Tailwind CSS** and **Material Tailwind**.
+- **Interactive Feedback:** Elegant user notifications via **React Toastify** and consistent iconography with **Lucide React**.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Core
+- **React 18** & **TypeScript**
+- **Vite** (Next Generation Frontend Tooling)
+- **React Router DOM v7** (Client-side routing)
 
-## Expanding the ESLint configuration
+### Data & State
+- **TanStack Query (React Query):** Server-state management and synchronization.
+- **Zustand:** Global client-side state management.
+- **Axios:** Promise-based HTTP client for the browser.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Styling & UI
+- **Tailwind CSS:** Utility-first CSS framework.
+- **Material Tailwind:** High-quality components for React & Tailwind.
+- **Lucide React:** Beautiful & consistent icons.
+- **React Toastify:** For toast notifications.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📦 Installation & Setup
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/HadyAyman0/bostaAssessment.git](https://github.com/HadyAyman0/bostaAssessment.git)
