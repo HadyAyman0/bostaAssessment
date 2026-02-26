@@ -1,0 +1,27 @@
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+module.exports = withMT({
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem", 
+        sm: "1.7rem",
+        lg: "2rem",
+      },
+      screens: {
+        sm: "400px",
+        md: "700px",
+        lg: "980px",
+        xl: "1200px",
+        "2xl": "1450px",
+      },
+    },
+    extend: {},
+  },
+  plugins: [],
+});
